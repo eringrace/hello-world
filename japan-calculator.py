@@ -27,8 +27,11 @@ def accomodation(acc_var):
 
 ####################### TRAVEL #######################
 
+def main():
+	days = int(raw_input("How many days do you want to stay in Japan?"))
+	print "\nThat'll be about %s yen in meals..." % (meals())
+	acc_var = raw_input("\nWhat kind of accomodations do you want?\n     If you want to stay in a hotel, press 1.\n     If you want to stay in a guest house, press 2.\n     If you want to stay in a hostel, press 3. \n")
+	print "\nSo you'll spend about %s on accommodations..." % (accomodation(acc_var))
 
-days = int(raw_input("How many days do you want to stay in Japan?"))
-print "\nThat'll be about %s yen in meals..." % (meals())
-acc_var = raw_input("\nWhat kind of accomodations do you want?\n     If you want to stay in a hotel, press 1.\n     If you want to stay in a guest house, press 2.\n     If you want to stay in a hostel, press 3. \n")
-print "\nSo you'll spend about %s on accommodations..." % (accomodation(acc_var))
+if __name__ == "__main__":
+	main()
